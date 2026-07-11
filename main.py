@@ -80,9 +80,7 @@ def start(message):
     markup.add(btn1, btn2, btn3, btn4)
     markup.add(btn5, btn6)
 
-    bot.send_photo(message.chat.id, photo=open('img/photo.jpg', 'rb'), caption="" 'Твои мысли не должны теряться.\n\n'
-                                      'MindDrop — это место, где каждая идея остаётся с тобой . Записывай всё, что приходит в голову, ставь напоминания и возвращайся к важному в нужный момент.\n\n'
-                                      'Просто . Быстро . Без хаоса .', reply_markup=markup)
+    bot.send_message(message.chat.id,'Добро пожаловать в бота! Здесь, вы можете запомнить все!, reply_markup=markup)
 
 #КОМАНДА ДОБАВИТЬ МЫСЛЬ
 @bot.message_handler(func=lambda message: message.text == 'Добавить мысль')
